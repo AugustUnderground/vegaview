@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "vegaview:lib"
+
+    - path: "./app/Main.hs"
+      component: "vegaview:exe:vegaview-exe"
+
+    - path: "./app/Paths_vegaview.hs"
+      component: "vegaview:exe:vegaview-exe"
+
+    - path: "./test"
+      component: "vegaview:test:vegaview-test"

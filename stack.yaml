@@ -1,0 +1,16 @@
+resolver: lts-18.6
+compiler: ghc-8.10.4
+
+packages:
+- .
+
+ghc-options:
+  "$locals": -funfolding-use-threshold=16 -fexcess-precision -optc-O3 -optc-ffast-math -O2 # -v
+
+apply-ghc-options: locals
+
+extra-deps: 
+  - github: lettier/webviewhs
+    commit: 21ddd4b4872b2e7eb50c9735e70cfbdedf2c6c1a
+  - jmacro-0.6.17.1@sha256:e860bf3b8b041fa22124ffd7e8c71099f13928dfb6d096471592e151dfd64d9c,3747
+  - text-format-heavy-0.1.5.3@sha256:abbc5f0c4883328df4058cf2145820eaf41c35d1af9cdacc50fc2e4c2bd15dda,2755
